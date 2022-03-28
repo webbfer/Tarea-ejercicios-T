@@ -1,0 +1,88 @@
+form {
+    margin: 0 auto;
+    /*centrar*/
+    width: 450px;
+    padding: 2em;
+    border: 5px solid #ccc;
+    border-radius: 1.50em;
+    border-color: rgb(255, 255, 255);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(240, 240, 240);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color:rgb(245, 245, 245);
+    font-size: 21px;
+    text-align: center;
+    
+}
+
+form li+li {
+    /* El simbolo mas le dice que va aplicar 
+    el estilo solo si precede el li al siguiente li */
+    margin-top: 1em; 
+    color: rgb(240, 240, 240);
+    text-align: right;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 350px;
+    box-sizing: border-box;
+    border: 2px solid rgb(41, 39, 41);
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+button {
+    padding-left: 10px;
+    margin-left: .5em; 
+    text-align: right; 
+    background-color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+body{
+    background-image: linear-gradient(135deg,#00B7D4, #505488, #2F3F80, #156669,#5A4894,
+                                             #a950A1, #FF7CAE);
+    background-size: 500% 500%;
+    animation: fanimado 14s infinite;
+}
+
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+
+

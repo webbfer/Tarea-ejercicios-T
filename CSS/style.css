@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, article, section,
+nav, figure {
+    display: block;
+}
+
+body{
+    /*Estilos por default para color de texto, tamaño, color de fondo */
+    font-size: 1em;
+    color:rgb(255, 255, 255); 
+    background-color:#ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+/* cabeceras: */ 
+
+h1, h2, h3{
+    /* sombra para el texto de los h1, h2, h3 */
+    text-shadow: 0 1px 1px black; 
+    font: arial;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: black;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0 0 0em;
+    color: black;
+    font: arial;
+}
+
+p{ 
+ padding: 10px; /* el mismo padding para todos los lados*/
+
+ padding-top: 10px; /* Arriba */
+ padding-bottom: 10px; /* Abajo */  
+ padding-left: 10px; /* Izquierda */
+ padding-right: 10px; /* Derecha */
+
+ padding: 25px 10px 25px 10px; /*Arriba, Derecha, Abajo, Izquierda */
+
+ padding: 25px 10px; /* 25px Arriba y Abajo, 10px  Derecha e Izquierda */
+ margin: 0 0 0em;
+}
+
+/*Parrafo*/
+
+p{
+    line-height: 1.5em; /* interlineado*/
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.line{
+    /* linea divisora */
+    height: 2px;
+    margin: 1.5em 0;
+    overflow: hidden;
+}
+
+article .line{
+    /* linea divisora dentro de los articulos */
+    background-color: black;
+}
+
+/* menú*/
+nav{
+    background: #f8f8f8;
+    position: absolute;
+    right: 0;
+    top: 4em;
+    margin-bottom: 4em;
+}
+
+nav ul li{
+    /*para que el menú se muestre en forma horizontal*/
+    display: inline;
+}
+
+nav ul li a,
+nav ul li a, :visited{
+    color: #000000;
+    display: block;
+    float: left;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 5px 2px;
+    padding: 7px 10px 4px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    background-color:blueviolet;
+}
+
+nav, article, nav ul li a, figure{
+    /* bordes redondeados*/
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;    
+}
+
+/* Articulos */
+
+#page{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+article{
+    background-color: #4e9e99;
+    margin: 3em 0;
+    padding: 20px;
+    text-shadow: 0 0px 0 black;
+}
+
+/*para mostrar un espacio despues de cada articulo*/
+
+.clear:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Para figura e imagen*/
+
+figure{
+    float: right;
+    margin-left: 25px;
+    overflow: hidden;
+}
+
+figure img{
+    margin-left: -60px;
+}
+
+/*footer*/
+
+footer{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 0.825em;
+}
+
+footer p{
+    background-color: #818181;
+    padding: 30px;
+
+    /* bordes redondeados*/
+
+    -moz-border-radius:10px;
+    -webkit-border-raius:10px;
+    border-radius:10px;
+}
